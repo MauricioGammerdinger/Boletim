@@ -1,0 +1,8 @@
+<div>
+    Aluno: <a href="a" (click)="exibir()">{{aluno.nome}}</a>
+    <div *ngIf="aluno.aprovado">
+        Nota: {{aluno.nota}}
+    </div>
+    <div *ngIf="aluno.nota > 5"> Aprovado! </div>
+    <div *ngIf="aluno.nota < 5"> Reprovado! </div>
+</div>
